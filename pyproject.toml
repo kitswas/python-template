@@ -1,0 +1,37 @@
+[project]
+name = "python-template"
+version = "0.1.0"
+description = "Python project template"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.6.0"]
+
+[dependency-groups]
+dev = ["ruff>=0.11.2"]
+
+[project.optional-dependencies]
+torch-cpu = ["torch>=2.6.0", "torchvision>=0.21.0"]
+torch-cu124 = ["torch>=2.6.0", "torchvision>=0.21.0"]
+
+[tool.uv]
+conflicts = [[{ extra = "torch-cpu" }, { extra = "torch-cu124" }]]
+
+[tool.uv.sources]
+torch = [
+	{ index = "pytorch-cpu", extra = "torch-cpu" },
+	{ index = "pytorch-cu124", extra = "torch-cu124" },
+]
+torchvision = [
+	{ index = "pytorch-cpu", extra = "torch-cpu" },
+	{ index = "pytorch-cu124", extra = "torch-cu124" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
