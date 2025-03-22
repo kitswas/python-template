@@ -49,7 +49,7 @@ uv run python -m unittest discover
 Get rid of temporary files: (Use with caution)
 
 ```bash
-git clean -fdX
+git clean -fdX -n # Remove the -n flag to actually delete the files
 ```
 
 ## Code Formatting and Linting
