@@ -32,7 +32,7 @@ uv add numpy # Similar to pip install numpy
 To run any script, append `uv run` before the `python` command. (If the environment is inactive)
 
 ```bash
-uv run python pysync/hello.py
+uv run python src/hello.py
 ```
 
 Run tests:
@@ -50,17 +50,17 @@ and enable `Format on Save` for a better experience.
 To sort imports:
 
 ```bash
-uv run ruff check --select I pysync --fix
+uv run ruff check --select I src --fix
 ```
 
 To check for linting errors:
 
 ```bash
-uv run ruff check --select ALL pysync # Use --fix to fix the errors
+uv run ruff check --select ALL src # Use --fix to fix the errors
 ```
 
 To format the code:
 
 ```bash
-uv run ruff format pysync
+uv run ruff format src
 ```
