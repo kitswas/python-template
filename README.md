@@ -13,6 +13,8 @@ You can get it from [here](https://docs.astral.sh/uv/getting-started/installatio
 > and the number in [.python-version](.python-version).  
 > uv will take care of the rest.
 
+**Remember to replace the placeholders in the [pyproject.toml](pyproject.toml) file and change/remove the LICENSE file.**
+
 Set up the environment. (Only once)
 
 ```bash
