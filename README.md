@@ -30,10 +30,10 @@ uv sync --link-mode=symlink --extra=torch-cpu   # for CPU only
 uv sync --link-mode=symlink --extra=torch-cu124 # for CUDA support
 ```
 
-You can add other dependencies use `uv add`.
+You can add other dependencies use `uv add`. The following example adds a valid kernel for Jupyter notebooks in VSCode.
 
 ```bash
-uv add numpy # Similar to pip install numpy
+uv add ipykernel # Similar to pip install ipykernel
 ```
 
 To run any script, append `uv run` before the `python` command. (If the environment is inactive)
