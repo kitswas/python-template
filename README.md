@@ -41,6 +41,12 @@ Run tests:
 uv run python -m unittest discover
 ```
 
+Get rid of temporary files: (Use with caution)
+
+```bash
+git clean -fdX
+```
+
 ## Code Formatting and Linting
 
 We have [ruff](https://docs.astral.sh/ruff/) for code formatting and linting.
@@ -56,7 +62,7 @@ uv run ruff check --select I src --fix
 To check for linting errors:
 
 ```bash
-uv run ruff check --select ALL src # Use --fix to fix the errors
+uv run ruff check src # Use --fix to fix the errors
 ```
 
 To format the code:
