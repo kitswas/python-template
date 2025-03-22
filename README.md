@@ -8,6 +8,11 @@ Includes basic project structure, a test suite, a code formatter and linter, and
 You need the UV package/project manager to install the dependencies.  
 You can get it from [here](https://docs.astral.sh/uv/getting-started/installation/).
 
+> [!NOTE]
+> To change the Python version, change the `requires-python` field in [pyproject.toml](pyproject.toml)
+> and the number in [.python-version](.python-version).  
+> uv will take care of the rest.
+
 Set up the environment. (Only once)
 
 ```bash
