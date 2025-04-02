@@ -60,10 +60,11 @@ We have [ruff](https://docs.astral.sh/ruff/) for code formatting and linting.
 Install the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
 and enable `Format on Save` for a better experience.
 
-To sort imports:
+To fix imports:
 
 ```bash
-uv run ruff check --select I src --fix
+uv run ruff check --select I --fix src # Sort imports
+uv run ruff check --select F401 --fix src # Remove unused imports
 ```
 
 To check for linting errors:
