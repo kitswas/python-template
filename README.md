@@ -20,7 +20,7 @@ Set up the environment. (Only once)
 ```bash
 uv venv
 # .venv/Scripts/activate # Windows
-.venv/bin/activate # Linux/MacOS
+source .venv/bin/activate # Linux/MacOS
 uv sync --link-mode=symlink # Install the dependencies, use -U to update
 ```
 
