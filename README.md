@@ -28,7 +28,7 @@ If you want Pytorch (with or without CUDA), you can install it using the `--extr
 
 ```bash
 uv sync --link-mode=symlink --extra=torch-cpu   # for CPU only
-uv sync --link-mode=symlink --extra=torch-cu124 # for CUDA support
+uv sync --link-mode=symlink --extra=torch-cu128 # for CUDA support
 ```
 
 You can add other dependencies use `uv add`. The following example adds a valid kernel for Jupyter notebooks in VSCode.
