@@ -15,6 +15,7 @@ torch-cpu = ["torch>=2.10.0", "torchvision>=0.25.0"]
 torch-cu128 = ["torch>=2.10.0", "torchvision>=0.25.0"]
 
 [tool.uv]
+exclude-newer = "3 days"                                           # ignore any package version published in the last 72 hours
 conflicts = [[{ extra = "torch-cpu" }, { extra = "torch-cu128" }]]
 
 [tool.uv.sources]
