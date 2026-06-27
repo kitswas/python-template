@@ -11,8 +11,8 @@ dependencies = []
 dev = ["pdoc>=16.0.0", "ruff>=0.15.0"]
 
 [project.optional-dependencies]
-torch-cpu = ["torch>=2.10.0", "torchvision>=0.25.0"]
-torch-cu128 = ["torch>=2.10.0", "torchvision>=0.25.0"]
+torch-cpu = ["torch>=2.12.0", "torchvision>=0.27.0"]
+torch-cu128 = ["torch>=2.12.0", "torchvision>=0.27.0"]
 
 [tool.uv]
 exclude-newer = "3 days"                                           # ignore any package version published in the last 72 hours
